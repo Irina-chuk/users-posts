@@ -1,0 +1,35 @@
+.buyer__zoom {
+    width: 239px;
+    height: 143px;
+    border: 1px solid #DADADA;
+    margin-right: 13px;
+    padding: 17px 14px 15px 14px;
+    &__link {
+        display: block;
+        padding-top: 10px;
+        margin-top: 35px;
+        width: 180px;
+        height: 35px;
+        background-color: #101010;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #FFFFFF;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 23px;
+        text-transform: capitalize;
+    }
+    &__city {
+        margin-top: 4px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 17px;
+        color: rgba(0, 0, 0, 0.41);
+    }
+}
+

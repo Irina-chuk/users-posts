@@ -1,0 +1,71 @@
+.promo {
+    min-height: 439px;
+    background: url("../../resources/img/main__background.jpg");
+    padding: 168px 60px 48px 60px;
+    &__elips {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 593px;
+        height: 156px;
+        border-radius: 50%;
+        margin: 0 auto;
+        background: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%);    
+    }
+    &__title {
+        font-family: 'Alegreya Sans';
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__subtitle {
+        font-family: 'Alegreya Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 36px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 96px;    
+    }
+    &__arrow {
+        position: relative;
+        &-top {
+            transform: rotate(45deg);
+            background: #000;
+            height: 1px;
+            left: 17px;
+            position: absolute;
+            top: -2px;
+            width: 10px;
+            &_prev {
+                left: 15px;
+                background: #FFF;
+                transform: rotate(-45deg);
+
+            }
+        }
+        &-bottom {
+            transform: rotate(-45deg);
+            background: #000;
+            height: 1px;
+            left: 17px;
+            position: absolute;
+            top: 5px;
+            width: 10px;
+            &_prev {
+                left: 15px;
+                background: #FFF;
+                transform: rotate(45deg);
+            }
+        }
+
+    }
+    
+}

@@ -1,0 +1,67 @@
+.profile {
+    padding-top: 106px;
+    table {
+        width: 100%;
+        border: 1px solid #000;
+        border-collapse: collapse;
+        .cell-1 {
+            width: 53px;
+        }
+        .cell-7 {
+            width: 62px;
+        }
+        .cell-button {
+            padding: 0;
+        }
+      }
+    tr {
+        border: 1px solid #000;
+        border-collapse: collapse;
+    }
+    td {
+        padding: 14px 14px 10px 18px;
+        border: 1px solid #000;
+        border-collapse: collapse;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+
+    }
+    th {
+        padding: 11px 0 13px 18px;
+        border: 1px solid #000;
+        font-family: "Alegreya Sans";
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 40px;
+        text-align: left;
+
+    }
+    .posts {
+        width: 100%;
+        padding: 16px 62px 33px 53px;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        border-bottom: 1px solid #000;
+        &__header {
+            font-family: "Alegreya Sans";
+            font-size: 35px;
+            font-weight: 500;
+            line-height: 40px;
+            text-align: left;
+        }
+        &__link {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            font-size: 19px;
+            width: 100px;
+            color: #000;
+            text-decoration: underline;
+            
+        }
+    }
+
+    
+}

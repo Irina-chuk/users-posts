@@ -1,0 +1,146 @@
+.information {
+    padding: 31px 61px 38px 61px;
+    .total {
+        color: #E0E0E0;
+    }
+    &__header {
+        width: 995px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-family: "Alegreya Sans";
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+    &__count {
+        font-family: "Alegreya Sans";
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    &__wrapper {
+        margin-top: 47px;
+        width: 100%;
+        height: 272px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__area {
+        width: 371px;
+        &__title {
+            font-family: "Alegreya Sans";
+            font-size: 35px;
+            font-weight: 500;
+            line-height: 40px;
+            text-align: left;
+        }
+        &__subtitle {
+            margin-top: 16px;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 20px;
+            text-align: left;
+            &_zoom {
+                font-size: 18px;
+            }
+            
+        }
+        &__descr {
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+            color: #939393;
+            text-align: left;
+            &_zoom {
+                font-size: 18px;
+            }
+        }
+        &__info {
+            padding-left: 42px;
+            height: 215px;
+            overflow-y: scroll; 
+            direction: rtl;
+            &::-webkit-scrollbar {
+                width: 8px;
+                height: 215px;
+                background-color: #939393;
+                border: 3px solid #FFF;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: #0D1E4B; 
+                width: 15px;
+            }
+        }
+    }
+    &__application {
+        width: 559px;
+        height: 272px;
+        border: 1px solid #DADADA;
+        padding: 13px 25px 25px 25px;
+        position: relative;
+        button {
+            position: absolute;
+            bottom: 25px;
+            right: 25px;
+        }
+    }
+    .label {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 40px;
+            text-align: left;
+            &_zoom {
+                font-size: 19px;
+            }
+        }
+    .textarea {
+            margin-top: 9px;
+            width: 509px;
+            height: 134px;
+            padding: 10px 20px;
+            resize: none;
+            font-family: "Open Sans";
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 15px;
+            text-align: left;
+            color: #969696;
+            border-radius: 0;
+            &_zoom {
+                font-size: 18px;
+            }
+        }
+        
+    
+    &__group {
+        margin-top: 63px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &__header {
+            width: 132px;
+            font-family: 'Alegreya Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 40px;
+            color: #000000;
+        }
+        &__descr {
+            width: 838px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #939393;
+            &_zoom {
+                font-size: 18px;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,52 @@
+.button {
+    width: 205px;
+    height: 40px;
+    color: #000;
+    background-color: #FFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+    border: none;
+    &__long {
+        width: 257px;
+    }
+    &__prev {
+        background-color: #000;
+        border: solid 1px #FFF;
+        width: 40px;
+    }
+    &__next {
+        width: 40px;
+    }
+   
+    &__application {
+        width: 101px;
+        height: 35px;
+        background-color: #101010;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 15px;
+        text-align: center;
+        color: #FFF;
+    }
+    &__message {
+        width: 176px;
+        height: 44px;
+        background-color: #000;
+        color: #FFF;
+    }
+    &__add {
+        width: 247px;
+        height: 44px;
+        background-color: #000;
+        color: #FFF;
+    }
+    &__zoom {
+        width: 220px;
+        height: 35px;
+        background-color: #000;
+        font-size: 17px;
+        color: #FFF;
+    }
+}

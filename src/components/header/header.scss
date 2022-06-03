@@ -1,0 +1,46 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 61px 0 61px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101010;
+    h1 {
+        font-family: 'Alegreya Sans';
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 60px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__link {
+        width: 257px;
+        height: 40px;
+        background-color: #FFF;
+        padding-top: 11px;
+        padding-left: 40px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        
+        a { 
+            color: #000;
+            &:hover {
+                color: #000;
+        }
+        
+        }
+    }
+    &__buttons {
+        width: 474px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

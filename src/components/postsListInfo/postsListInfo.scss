@@ -1,0 +1,18 @@
+.postsListInfo {
+    width: 100%;
+    padding-top: 106px;
+    &__header {
+        font-family: "Alegreya Sans";
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 40px;
+        text-align: left;
+    }
+    &__wrapper {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}

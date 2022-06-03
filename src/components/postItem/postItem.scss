@@ -1,0 +1,24 @@
+.postItem {
+    width: 490px;
+    height: 143px;
+    border: 1px solid #000;
+    padding: 14px 34px 17px 35px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    &__title {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: left;
+        color: #000;
+    }
+    &__text {
+        margin-top: 4px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.41);
+    }
+
+}

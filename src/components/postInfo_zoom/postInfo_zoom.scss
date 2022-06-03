@@ -1,0 +1,64 @@
+.postInfoZoom {
+    padding: 106px 15px 15px 15px;
+    &__title {
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: left;
+    }
+    &__text {
+        font-size: 18px;
+    }
+    &__comment {
+        margin-top: 40px;
+        &__wrapper {
+            margin-top: 10px;
+        }
+        &__title {
+            font-size: 25px; 
+        }
+    }
+}
+.form_zoom {
+    button {
+        margin-left: 220px;
+    }
+}
+.input__email_zoom, .input__name_zoom {
+    margin: 0 auto;
+    height: 50px;
+    width: 200px;
+    margin-bottom: 10px;
+    position: relative;
+    input {
+        padding: 0 20px;
+        font-size: 18px;
+        width: 150px;
+        height: 30px;
+    }
+    
+}
+.input__body_zoom {
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+    position: relative;
+    textarea {
+        width: 100%;
+        height: 70px;
+        padding: 5px 20px;
+        font-size: 18px;
+        resize: none;
+    }
+    
+}
+.label__zoom {
+    font-size: 18px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+
+
