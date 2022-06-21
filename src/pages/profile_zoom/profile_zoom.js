@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Service from "../services/service";
-import Spinner from "../spinner/spinner";
-import ErrorMessageZoom from "../errorMessage_zoom/errorMessage_zoom";
-import PostsListZoom from "../postsList_zoom/postsList_zoom";
+import Service from "../../services/service";
+import Spinner from "../../components/spinner/spinner";
+import ErrorMessage from "../errorMessage/errorMessage";
+import PostsListZoom from "../../components/postsList_zoom/postsList_zoom";
 import { useParams } from "react-router-dom";
 import {Link} from "react-router-dom";
 
@@ -33,7 +33,7 @@ const ProfileZoom = () => {
     }
 
     const spinner = loading ? <Spinner/> : null;
-    const errorMessage = error ? <ErrorMessageZoom/> : null;
+    const errorMessage = error ? <ErrorMessage/> : null;
     return (
         <>
         {spinner},

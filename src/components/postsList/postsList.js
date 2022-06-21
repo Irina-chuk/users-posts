@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Service from "../services/service";
+import Service from "../../services/service";
 import Spinner from "../spinner/spinner";
-import ErrorMessage from "../errorMessage/errorMessage";
+import ErrorMessage from "../../pages/errorMessage/errorMessage";
 import PostItem from "../postItem/postItem";
 import "./postsList.scss";
 const PostsList = ({id}) => {

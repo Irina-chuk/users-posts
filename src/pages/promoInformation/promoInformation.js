@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import Service from "../services/service";
-import Spinner from "../spinner/spinner";
+import Service from "../../services/service";
+import Spinner from "../../components/spinner/spinner";
 import ErrorMessage from "../errorMessage/errorMessage";
-import Promo from "../promo/promo";
-import Information from "../information/information";
+import Promo from "../../components/promo/promo";
+import Information from "../../components/information/information";
 
 import "./promoInformation.scss";
 const PromoInformation = () => {
@@ -16,6 +16,7 @@ const PromoInformation = () => {
     }, []);
 
     const updateUsers = () => {
+        setLoading(true);
         userService.getAllUsers()
         .then(onUserLoaded)
         .catch(onError);  

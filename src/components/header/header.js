@@ -11,8 +11,6 @@ const Header = () => {
                 <div className="header__link">
                 <a href="/zoom">Версия для слабовидящих</a>
                 </div>
-                
-                <button className="button">Мой профиль</button>
             </div>
         </header>
     )

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Service from "../services/service";
-import Spinner from "../spinner/spinner";
+import Service from "../../services/service";
+import Spinner from "../../components/spinner/spinner";
 import ErrorMessage from "../errorMessage/errorMessage";
-import PostsList from "../postsList/postsList";
+import PostsList from "../../components/postsList/postsList";
 import { useParams } from "react-router-dom";
 import {Link} from "react-router-dom";
 
@@ -18,6 +18,7 @@ const Profile = () => {
     }, [userId]);
 
     const updateUser = () => {
+        setLoading(true);
         userService.getUser(userId)
         .then(onUserLoaded)
         .catch(onError);  

@@ -29,18 +29,14 @@
         letter-spacing: 0em;
         text-align: left;
 
-        
         a { 
             color: #000;
             &:hover {
                 color: #000;
-        }
-        
+            } 
         }
     }
     &__buttons {
-        width: 474px;
-        display: flex;
-        justify-content: space-between;
+        width: 257px;
     }
 }

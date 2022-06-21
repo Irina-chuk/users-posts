@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Service from "../services/service";
+import Service from "../../services/service";
 import Spinner from "../spinner/spinner";
-import ErrorMessageZoom from "../errorMessage_zoom/errorMessage_zoom";
+import ErrorMessage from "../../pages/errorMessage/errorMessage";
 import PostItemZoom from "../postItem_zoom/postItem_zoom";
 import "./postsList_zoom.scss";
 const PostsListZoom = ({id}) => {
@@ -38,7 +38,7 @@ const PostsListZoom = ({id}) => {
         });
 
     const spinner = loading ? <Spinner/> : null;
-    const errorMessage = error ? <ErrorMessageZoom/> : null;
+    const errorMessage = error ? <ErrorMessage/> : null;
     return (
         <>
             {errorMessage}

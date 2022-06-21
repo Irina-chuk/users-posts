@@ -1,9 +1,9 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Service from "../services/service";
-import Spinner from "../spinner/spinner";
+import Service from "../../services/service";
+import Spinner from "../../components/spinner/spinner";
 import ErrorMessage from "../errorMessage/errorMessage";
-import PostItem from "../postItem/postItem";
+import PostItem from "../../components/postItem/postItem";
 import "./postsListInfo.scss";
 const PostsListInfo = () => {
     const {userId} = useParams();
@@ -16,6 +16,7 @@ const PostsListInfo = () => {
     }, []);
 
     const updatePosts = () => {
+        setLoading(true);
         userService.getAllPosts(userId)
         .then(onPostsLoaded)
         .catch(onError);  
@@ -49,7 +50,7 @@ const PostsListInfo = () => {
             { spinner}
             {!(error || loading || !posts) ?
         <div className="postsListInfo">
-            <h2 class="postsListInfo__header">Посты</h2>
+            <h2 className="postsListInfo__header">Посты</h2>
             <div className="postsListInfo__wrapper">
             {elements}
             </div>

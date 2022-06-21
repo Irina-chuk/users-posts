@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import Service from "../services/service";
-import Spinner from "../spinner/spinner";
-import ErrorMessageZoom from "../errorMessage_zoom/errorMessage_zoom";
-import PromoZoom from "../promo_zoom/promo_zoom";
-import InformationZoom from "../information_zoom/information_zoom";
+import Service from "../../services/service";
+import Spinner from "../../components/spinner/spinner";
+import ErrorMessage from "../errorMessage/errorMessage";
+import PromoZoom from "../../components/promo_zoom/promo_zoom";
+import InformationZoom from "../../components/information_zoom/information_zoom";
 
 import "./promoInformation_zoom.scss";
 const PromoInformationZoom = () => {
@@ -31,7 +31,7 @@ const PromoInformationZoom = () => {
     }
 
     const spinner = loading ? <Spinner/> : null;
-    const errorMessage = error ? <ErrorMessageZoom/> : null;
+    const errorMessage = error ? <ErrorMessage/> : null;
     return (
         <>
             {errorMessage}

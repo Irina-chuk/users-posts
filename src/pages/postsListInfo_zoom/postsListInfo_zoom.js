@@ -1,9 +1,9 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Service from "../services/service";
-import Spinner from "../spinner/spinner";
-import ErrorMessageZoom from "../errorMessage_zoom/errorMessage_zoom";
-import PostItemZoom from "../postItem_zoom/postItem_zoom";
+import Service from "../../services/service";
+import Spinner from "../../components/spinner/spinner";
+import ErrorMessage from "../errorMessage/errorMessage";
+import PostItemZoom from "../../components/postItem_zoom/postItem_zoom";
 import "./postsListInfo_zoom.scss";
 const PostsListInfoZoom = () => {
     const {userId} = useParams();
@@ -42,7 +42,7 @@ const PostsListInfoZoom = () => {
         });
 
     const spinner = loading ? <Spinner/> : null;
-    const errorMessage = error ? <ErrorMessageZoom/> : null;
+    const errorMessage = error ? <ErrorMessage/> : null;
     return (
         <>
             {errorMessage}
